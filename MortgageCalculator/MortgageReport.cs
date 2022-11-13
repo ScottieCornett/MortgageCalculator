@@ -21,7 +21,7 @@ namespace MortgageCalculator
             Console.WriteLine("MORTGAGE PAYMENT: " + mortgageFormatted);
         }
 
-        public static void PrintPaymentSchedule()
+        public static void PaymentSchedule()
         {
 
             Console.WriteLine();
@@ -37,6 +37,28 @@ namespace MortgageCalculator
             }
 
         }
+        
+        public static void PrintPaymentSchedule()
+        {
+            while (true)
+            {
+                Console.WriteLine("Would you like to see your payment schedule? Type 'yes' to confirm or press enter to exit");
+                string userInput = Console.ReadLine().ToLower();
 
+                if (!string.IsNullOrWhiteSpace(userInput))
+                {
+                    if (userInput == "yes")
+                    {
+                        MortgageReport.PaymentSchedule();
+                        break;
+
+                    }
+
+                    Console.WriteLine("Please enter a valid input");
+                    continue;
+                }
+                break;
+            }
+        }
     }
 }

@@ -16,27 +16,7 @@
 
                 MortgageReport.PrintMortgage(principal, annualInterest, years);
                 Console.WriteLine();
-
-                while (true)
-                {
-                    Console.WriteLine("Would you like to see your payment schedule? Type 'yes' to confirm or press enter to exit");
-                    string userInput = Console.ReadLine().ToLower();
-
-                    if (!string.IsNullOrWhiteSpace(userInput))
-                    {
-                        if (userInput == "yes")
-                        {
-                            MortgageReport.PrintPaymentSchedule();
-                            break;
-
-                        }
-
-                        Console.WriteLine("Please enter a valid input");
-                        continue;
-                    }
-                    break;
-                }
-
+                MortgageReport.PrintPaymentSchedule();
 
             }
 
