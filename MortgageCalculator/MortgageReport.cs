@@ -34,6 +34,7 @@ namespace MortgageCalculator
                 double balance = calculator.CalculateBalance(month);
                 var displayBalance = balance.ToString("C");
                 Console.WriteLine(displayBalance + " " + "Payment number: " + month);
+                
             }
 
         }
@@ -59,6 +60,8 @@ namespace MortgageCalculator
                 }
                 break;
             }
+
+            
         }
     }
 }

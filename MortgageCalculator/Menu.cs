@@ -10,6 +10,7 @@ namespace MortgageCalculator
     {
         public static void GreetUser()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Mortgage Calculator 1.0");
             Console.WriteLine("************************");
             Console.WriteLine();
