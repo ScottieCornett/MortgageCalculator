@@ -42,7 +42,7 @@ namespace MortgageCalculator.Tests
             var actual = calculator.GetNumberOfPayments();
             var expected = 12;
 
-            //
+            // Assert
             Assert.Equal(actual, expected);
 
         }
