@@ -10,7 +10,9 @@
                 float annualInterest = (float)ConsoleReader.ReadNumber("Annual Interest Rate: ", 0, 30);
                 byte years = (byte)ConsoleReader.ReadNumber("Period (Years): ", 0, 100);
 
+                
                 MortgageReport.PrintMortgage(principal, annualInterest, years);
+                State.Compare();
                 Console.WriteLine();
                 MortgageReport.PrintPaymentSchedule();
 
