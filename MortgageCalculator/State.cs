@@ -14,9 +14,10 @@ namespace MortgageCalculator
         public static void Compare()
         {
             Console.WriteLine();
-            Console.WriteLine("**************US DATA************ ");
+            Console.WriteLine("**************US DATA**************");
+            Console.WriteLine("*****AVERAGE MORTGAGE PAYMENT******");
             Console.WriteLine("**FROM CHEAPEST TO MOST EXPENSIVE**");
-            Console.WriteLine("*********************************");
+            Console.WriteLine("***********************************");
             Console.WriteLine();
             var states = new StateRepository().GetStates();
             var statelist = states.OrderBy(s => s.MonthlyPayment);

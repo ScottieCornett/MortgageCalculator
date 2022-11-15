@@ -33,7 +33,7 @@ namespace MortgageCalculator
 
                 double balance = calculator.CalculateBalance(month);
                 var displayBalance = balance.ToString("C");
-                Console.WriteLine(displayBalance + " " + "Payment number: " + month);
+                Console.WriteLine(displayBalance + " " + "PAYMENT NUMBER: " + month);
                 
             }
 
@@ -43,14 +43,15 @@ namespace MortgageCalculator
         {
             while (true)
             {
-                Console.WriteLine("Would you like to see your payment schedule? Type 'yes' to confirm or press enter to exit");
+                Console.WriteLine("Would you like to see your payment schedule? Type '1' to confirm or press enter to skip");
                 string userInput = Console.ReadLine().ToLower();
 
                 if (!string.IsNullOrWhiteSpace(userInput))
                 {
-                    if (userInput == "yes")
+                    if (userInput == "1")
                     {
                         MortgageReport.PaymentSchedule();
+                        Console.WriteLine();
                         break;
 
                     }
