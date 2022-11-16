@@ -17,17 +17,25 @@
                 State.Compare();
                 Console.WriteLine();
                 MortgageReport.PrintPaymentSchedule();
+
                 Console.WriteLine("Would you like to calculate another loan? Press 1 to continue or enter to exit \n");
                 var input = Console.ReadLine();
+
                 if (String.IsNullOrWhiteSpace(input))
                     break;
                 else if (input == "1")
                     continue;
                 else
-                    Console.WriteLine("Please enter a valid input");
+                {
+                    Console.WriteLine("Invalid selection");
+                    Console.WriteLine("Program terminated");
+                    break;
+                }
+                
 
+                
+                
             }
-
         }
     }
 }
