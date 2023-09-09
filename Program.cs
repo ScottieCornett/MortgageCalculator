@@ -10,7 +10,7 @@
 
                 int principal = (int)ConsoleReader.ReadNumber("Principal: ", 1000, 5000000);
                 float annualInterest = (float)ConsoleReader.ReadNumber("Annual Interest Rate: ", 0, 30);
-                byte years = (byte)ConsoleReader.ReadNumber("Period (Years): ", 0, 100);
+                byte years = (byte)ConsoleReader.ReadNumber("Period (Years): ", 0, 75);
 
 
                 MortgageReport.PrintMortgage(principal, annualInterest, years);
